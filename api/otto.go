@@ -21,6 +21,8 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "audio/wav")
+	w.Header().Set("Content-Disposition", `attachment; filename="otto.wav"`)
+
 	if _, err := w.Write(audio); err != nil {
 		http.Error(w, "", http.StatusInternalServerError)
 	}
