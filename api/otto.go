@@ -7,7 +7,7 @@ import (
 
 func Handler(w http.ResponseWriter, r *http.Request) {
 	_ = r.ParseForm()
-	s := r.FormValue("s")
+	s := r.FormValue("text")
 
 	if s == "" {
 		http.Error(w, "", http.StatusBadRequest)
