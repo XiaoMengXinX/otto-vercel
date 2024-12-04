@@ -3,7 +3,7 @@ module api
 go 1.20
 
 require (
-	github.com/XiaoMengXinX/otto-go v0.0.0-20241204145138-5bffaf71b629 // indirect
+	github.com/XiaoMengXinX/otto-go v0.0.0-20241204145452-44c7c9b6d82d // indirect
 	github.com/go-audio/audio v1.0.0 // indirect
 	github.com/go-audio/riff v1.0.0 // indirect
 	github.com/go-audio/wav v1.1.0 // indirect
